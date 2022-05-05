@@ -1,0 +1,173 @@
+@import "./components/footer";
+@import "./components/header";
+@import "./global/colors";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: $charade;
+}
+body {
+    background-color: $white;
+    min-height: 100vh;
+}
+
+.mainContainer {
+    min-height: calc(100vh - 100px - 100px);
+}
+
+/*NOSOTROS SECTION*/
+.nosotrosContainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: $gallery;
+    width: 100%;
+}
+.nosotrosTitle {
+    font-style: italic;
+    margin: 125px;
+    font-size: 30px;
+    color: $mine-shaft;
+    font-family: 'Kompot Sans', sans-serif;
+    text-shadow: 1px 1px 2px $yellow;
+}
+
+.textTitle {
+    margin: 50px;
+    width: 30%;
+}
+.textTitle h2 {
+    font-family: 'Cooper Hewitt', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: $mine-shaft;
+}
+.textTitle p {
+    font-family: 'Cooper Hewitt', sans-serif;
+    letter-spacing: 2px;
+    text-align: justify;
+    color: $mine-shaft
+}
+.textSubTitle {
+    font-family: 'Cooper Hewitt', sans-serif;
+    letter-spacing: 2px;
+    text-align: justify;
+    text-align: center;
+    color: $mine-shaft;
+    text-transform: uppercase;
+}
+
+/*CARDS*/
+.cardsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px;
+}
+.card {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+  }
+ 
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.icon-service {
+    width: 50px;
+    height: auto;
+    margin-left: 130px;
+  }
+
+  /*WHATSAPP ICON*/
+.whatsapp-ico{
+    fill: $white;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color: $mountain-meadow;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px $black-40;
+    position: fixed;
+    bottom: 20px;
+    left : 20px;
+    z-index: 10;
+}
+.whatsapp-ico:hover{
+    box-shadow: 2px 2px 11px $black-70;
+    background-color: $surfie-green;
+}
+
+
+/*FORM*/
+.formContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.contactContainer {
+    width: 35%;
+    margin: 15px;
+    background-color: $radical-red;
+}
+.contactContainer h3 {
+    color: $white;
+}
+.contactContainer p {
+    color: $white;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+  }
+  
+  input[type=submit] {
+    background-color: $yellow;
+    color: $black-70;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: $yellow;
+  }
+  
+  .form1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }

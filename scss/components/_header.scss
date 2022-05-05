@@ -1,0 +1,18 @@
+@import "../global/colors";
+
+header {
+    width: 100%;
+    background-color: $charade;
+}
+#contactoNav {
+    background-color: $radical-red;
+    display: flex;
+    justify-content: space-around;
+}
+nav {
+    height: 100px;
+}
+svg {
+    width: 20px;
+    fill: $white;
+}
