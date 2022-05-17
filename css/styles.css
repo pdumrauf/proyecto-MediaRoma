@@ -134,7 +134,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
   border-radius: 5px;
   width: 300px;
@@ -190,6 +190,8 @@ body {
 .contactContainer h3 {
   padding: 20px;
   color: #ffffff;
+  font-size: x-large;
+  text-transform: uppercase;
   font-family: "Cooper Hewitt", sans-serif;
 }
 
@@ -199,7 +201,12 @@ body {
   font-family: "Cooper Hewitt", sans-serif;
 }
 
-input[type=text] {
+.logo-positivo {
+  display: block;
+  margin: auto;
+}
+
+input {
   width: 100%;
   height: 40px;
   padding: 12px 20px;
@@ -222,9 +229,9 @@ textarea {
   resize: none;
 }
 
-input[type=submit] {
-  background-color: #fafa00;
-  color: rgba(0, 0, 0, 0.7);
+button {
+  background-color: #252a34;
+  color: #ffffff;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -233,9 +240,9 @@ input[type=submit] {
   font-family: "Cooper Hewitt", sans-serif;
 }
 
-input[type=submit]:hover {
-  background-color: #252a34;
-  color: #ffffff;
+button:hover {
+  background-color: #fafa00;
+  color: #252a34;
 }
 
 .form1 {

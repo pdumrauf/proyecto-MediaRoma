@@ -18,10 +18,10 @@ body {
     color: $white;
     font-family: 'Cooper Hewitt', sans-serif;
 }
+
 .mainContainer {
     min-height: calc(100vh - 100px - 100px);
 }
-
 .background-image {
     background-image: url('../assets/img/PORTADA.jpg');
     background-size: cover;
@@ -101,7 +101,7 @@ body {
     display: flex;
     flex-direction:column;
     justify-content: space-around;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 $black-40;
     transition: 0.3s;
     border-radius: 5px;
     width: 300px;
@@ -155,6 +155,8 @@ body {
 .contactContainer h3 {
     padding: 20px;
     color: $white;
+    font-size: x-large;
+    text-transform: uppercase;
     font-family: 'Cooper Hewitt', sans-serif;
 }
 .contactContainer p {
@@ -162,8 +164,12 @@ body {
     color: $white;
     font-family: 'Cooper Hewitt', sans-serif;
 }
+.logo-positivo {
+    display: block;
+    margin: auto;
+}
 
-input[type=text] {
+input {
     width: 100%;
     height: 40px;
     padding: 12px 20px;
@@ -172,7 +178,6 @@ input[type=text] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-
   }
 
   textarea {
@@ -186,10 +191,10 @@ input[type=text] {
     box-sizing: border-box;
     resize: none;
   }
-  
-  input[type=submit] {
-    background-color: $yellow;
-    color: $black-70;
+
+  button {
+    background-color: $charade;
+    color: $white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -197,14 +202,14 @@ input[type=text] {
     cursor: pointer;
     font-family: 'Cooper Hewitt', sans-serif;
   }
-  
-  input[type=submit]:hover {
-    background-color: $charade;
-    color: $white;
+
+  button:hover {
+    background-color: $yellow;
+    color: $charade;
   }
-  
+
   .form1 {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: $concrete;
     padding: 20px;
   }
