@@ -39,7 +39,7 @@ body {
     top: 50%;
     font-size: 100px;
     color: $white;
-    font-family: 'Kompot Sans';
+    font-family: 'Kompot Sans', sans-serif;
 }
 .imgTitle {
     position: absolute;
@@ -54,7 +54,7 @@ body {
     justify-content: space-around;
     background-color: $gallery;
     width: 100%;
-    margin-top: 80px;
+    height: 500px;
     margin-bottom: 80px;
 }
 .titleNosotros {
@@ -65,6 +65,9 @@ body {
 .textTitle {
     margin: 50px;
     width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .textTitle h2 {
     font-family: 'Cooper Hewitt', sans-serif;
