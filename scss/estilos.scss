@@ -14,9 +14,40 @@ body {
     background-color: $white;
     min-height: 100vh;
 }
-
+#contactoNav p {
+    color: $white;
+    font-family: 'Cooper Hewitt', sans-serif;
+}
 .mainContainer {
     min-height: calc(100vh - 100px - 100px);
+}
+
+.background-image {
+    background-image: url('../assets/img/PORTADA.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+.bannerTitle {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    //width: 100%;
+    //text-align: center;
+    font-size: 100px;
+    color: $white;
+    font-family: 'Kompot Sans', sans-serif;
+}
+.imgTitle {
+    position: absolute;
+    top: 70%;
+    height: auto;
+    text-align: center;
 }
 
 /*NOSOTROS SECTION*/
@@ -25,16 +56,14 @@ body {
     justify-content: space-around;
     background-color: $gallery;
     width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
-.nosotrosTitle {
-    font-style: italic;
-    margin: 125px;
-    font-size: 30px;
-    color: $mine-shaft;
-    font-family: 'Kompot Sans', sans-serif;
-    text-shadow: 1px 1px 2px $yellow;
+.titleNosotros {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-
 .textTitle {
     margin: 50px;
     width: 30%;
@@ -80,7 +109,7 @@ body {
   }
  
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 $yellow-40;
   }
 
 .icon-service {
@@ -123,10 +152,14 @@ body {
     background-color: $radical-red;
 }
 .contactContainer h3 {
+    padding: 20px;
     color: $white;
+    font-family: 'Cooper Hewitt', sans-serif;
 }
 .contactContainer p {
+    padding: 15px;
     color: $white;
+    font-family: 'Cooper Hewitt', sans-serif;
 }
 
 input[type=text] {
@@ -138,6 +171,7 @@ input[type=text] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+
   }
 
   textarea {
@@ -160,10 +194,12 @@ input[type=text] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Cooper Hewitt', sans-serif;
   }
   
   input[type=submit]:hover {
-    background-color: $yellow;
+    background-color: $charade;
+    color: $white;
   }
   
   .form1 {
